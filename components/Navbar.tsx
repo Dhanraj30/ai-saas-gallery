@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
-import { SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
+import { UserButton } from "@clerk/nextjs";
 
 // Routes where navbar should be hidden when signed in
 const protectedRoutes = ['/home', '/video-upload', '/social-share'];

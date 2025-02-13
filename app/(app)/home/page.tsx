@@ -16,13 +16,11 @@ function Home() {
             if(Array.isArray(response.data)) {
                 setVideos(response.data)
             } else {
-                throw new Error(" Unexpected response format");
-
+                throw new Error("Unexpected response format")
             }
         } catch (error) {
-            console.log(error);
+            console.log("Failed to fetch videos", error)
             setError("Failed to fetch videos")
-
         } finally {
             setLoading(false)
         }
@@ -33,17 +31,13 @@ function Home() {
     }, [fetchVideos])
 
     const handleDownload = useCallback((url: string, title: string) => {
-        () => {
-            const link = document.createElement("a");
-            link.href = url;
-            link.setAttribute("download", `${title}.mp4`);
-            link.setAttribute("target", "_blank");
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-
-        }
-
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", `${title}.mp4`);
+        link.setAttribute("target", "_blank");
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }, [])
 
     if(loading){
@@ -51,6 +45,14 @@ function Home() {
           <div className="flex items-center justify-center min-h-[60vh]">
             <div className="loading loading-spinner loading-lg text-primary"></div>
           </div>
+        )
+    }
+
+    if(error) {
+        return (
+            <div className="flex items-center justify-center min-h-[60vh]">
+                <div className="text-error">{error}</div>
+            </div>
         )
     }
 
