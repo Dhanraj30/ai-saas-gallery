@@ -9,9 +9,13 @@
     "lint": "next lint",
     "postinstall": "prisma generate"
   },
+  "prisma": {
+    "schema": "prisma/schema.prisma"
+  },
   "dependencies": {
     "@clerk/nextjs": "^6.11.2",
     "@prisma/client": "^6.3.1",
+    "autoprefixer": "^10.4.20",
     "axios": "^1.7.9",
     "cloudinary": "^2.5.1",
     "dayjs": "^1.11.12",
