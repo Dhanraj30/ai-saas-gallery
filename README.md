@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gallery AI - Perfect Format for Every Platform
 
-## Getting Started
+![Gallery AI ](https://github.com/Dhanraj30/ai-saas-gallery/blob/add-docker-files/ga.png)
 
-First, run the development server:
+Gallery AI is a SaaS application that leverages artificial intelligence to automatically optimize images and videos for various social media platforms. With just one upload, your content is perfectly formatted for every platform, saving you time and ensuring consistent quality across all your social media presence.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🌟 Features
+
+### Intelligent Format Optimization
+- Automatic resizing and formatting for all major social media platforms
+- Smart cropping that preserves the key elements of your content
+
+### Platform Support
+- Instagram (Posts, Stories, Reels)
+- Facebook (Timeline, Stories, Ads)
+- Twitter (Posts, Cards)
+- LinkedIn (Posts, Company Pages)
+- TikTok
+- YouTube (Thumbnails, Channel Art)
+
+### AI-Powered Enhancements
+- Smart object detection and focus
+- Quality optimization while maintaining file size requirements
+- Aspect ratio optimization per platform
+
+### User Features
+- Drag-and-drop interface
+- Bulk upload support
+- Template management
+- Project organization
+- Cloud storage integration
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18 or higher
+- PostgreSQL database (We use Neon DB)
+- Cloudinary account for image processing
+- Clerk account for authentication
+
+### Environment Variables
+Create a `.env` file in the root directory with the following:
+
+```env
+DATABASE_URL="your-neon-db-url"
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="your-cloudinary-name"
+CLOUDINARY_API_KEY="your-cloudinary-key"
+CLOUDINARY_API_SECRET="your-cloudinary-secret"
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="your-clerk-public-key"
+CLERK_SECRET_KEY="your-clerk-secret-key"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+```bash
+git clone https://github.com/Dhanraj30/ai-saas-gallery.git
+cd gallery-ai
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Learn More
+3. Run database migrations:
+```bash
+npx prisma migrate dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Start the development server:
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Docker Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Build and run with Docker Compose:
+```bash
+docker-compose build
+```
+```bash
+docker-compose up -d
+```
 
-## Deploy on Vercel
+2. View logs:
+```bash
+docker-compose logs -f
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 💻 Tech Stack
+
+- **Frontend**: Next.js 15, React, TailwindCSS, DaisyUI, TypeScript
+- **Backend**: Node.js, Prisma
+- **Database**: PostgreSQL (Neon)
+- **Authentication**: Clerk
+- **Image Processing**: Cloudinary
+- **Deployment**: Docker, Vercel
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🌐 Links
+
+- [Website]([https://galleryai.com](https://ai-saas-gallery-jcjtexbvb-dhanraj30s-projects.vercel.app/))
+
+Built with ❤️ by the Gallery AI Team
