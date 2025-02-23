@@ -108,6 +108,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🌐 Links
 
-- [Website](https://galleryai.com)
+- [Website]([https://galleryai.com](https://ai-saas-gallery-jcjtexbvb-dhanraj30s-projects.vercel.app/))
 
 Built with ❤️ by the Gallery AI Team
