@@ -1,6 +1,6 @@
 # Gallery AI - Perfect Format for Every Platform
 
-![Gallery AI Logo](https://your-logo-url.com)
+![Gallery AI ](https://github.com/Dhanraj30/ai-saas-gallery/blob/add-docker-files/ga.png)
 
 Gallery AI is a SaaS application that leverages artificial intelligence to automatically optimize images and videos for various social media platforms. With just one upload, your content is perfectly formatted for every platform, saving you time and ensuring consistent quality across all your social media presence.
 
